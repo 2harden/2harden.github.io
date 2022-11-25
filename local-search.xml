@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>create-blog</title>
+    <link href="/2022/11/25/create-blog/"/>
+    <url>/2022/11/25/create-blog/</url>
+    
+    <content type="html"><![CDATA[<h3 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h3><hr><h4 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h4><h5 id="1-1-安装配置git"><a href="#1-1-安装配置git" class="headerlink" title="1.1 安装配置git"></a>1.1 安装配置git</h5><h5 id="1-2-在github创建仓库"><a href="#1-2-在github创建仓库" class="headerlink" title="1.2 在github创建仓库"></a>1.2 在github创建仓库</h5><p>填写仓库名，格式必须为&lt;用户名&gt;.github.io</p><h5 id="1-3-安装nodejs"><a href="#1-3-安装nodejs" class="headerlink" title="1.3 安装nodejs"></a>1.3 安装nodejs</h5><p>首先下载稳定版Node.js，我这里给的是64位的<br>安装选项全部默认，一路点击Next<br>最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。</p><h5 id="1-4-安装hexo"><a href="#1-4-安装hexo" class="headerlink" title="1.4 安装hexo"></a>1.4 安装hexo</h5><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，我们采用hexo来创建我们的博客网站，hexo 是一个基于 nodejs 的静态博客网站生成器，使用 hexo 不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便<br>安装hexo</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs hexo">npm install -g hexo-cli<br></code></pre></td></tr></table></figure><p>查看版本</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs hexo">hexo -v<br></code></pre></td></tr></table></figure><p>创建一个项目 hexo_blog 并初始化</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs hexo">hexo init hexo_blog<br>cd hexo_blog<br>npm install<br></code></pre></td></tr></table></figure><p>本地启动</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs hexo">hexo g<br>hexo server<br></code></pre></td></tr></table></figure><p>hexo平时常用命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs hexo">hexo g  # 生成博客网页文件<br>hexo s  # 本地预览博客<br>hexo d  # 上传网页文件到github<br></code></pre></td></tr></table></figure><h5 id="1-5-浏览器访问"><a href="#1-5-浏览器访问" class="headerlink" title="1.5 浏览器访问"></a>1.5 浏览器访问</h5><p>浏览器访问 <a href="http://localhost:4000/">http://localhost:4000</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>test</title>
     <link href="/2022/11/25/test/"/>
     <url>/2022/11/25/test/</url>
