@@ -23,12 +23,12 @@
 <meta property="og:site_name" content="2harden&#39;s blog">
 <meta property="og:description" content="创建博客 1. 环境配置1.1 安装配置git1.2 在github创建仓库填写仓库名，格式必须为&lt;用户名&gt;.github.io 1.3 安装nodejs首先下载稳定版Node.js，我这里给的是64位的安装选项全部默认，一路点击Next最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。 1.4 安装hexo在合适的地方新建">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/create-blog/create-blog.png">
+<meta property="og:image" content="http://example.com/2022/11/25/create-blog/create-blog.png">
 <meta property="article:published_time" content="2022-11-25T09:37:52.000Z">
-<meta property="article:modified_time" content="2022-11-25T11:30:24.765Z">
+<meta property="article:modified_time" content="2022-11-25T11:39:37.897Z">
 <meta property="article:author" content="2harden">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/create-blog/create-blog.png">
+<meta name="twitter:image" content="http://example.com/2022/11/25/create-blog/create-blog.png">
   
   
   
@@ -299,7 +299,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs hexo">post_asset_folder: true<br></code></pre></td></tr></table></figure>
 <h5 id="3-2-创建文章"><a href="#3-2-创建文章" class="headerlink" title="3.2 创建文章"></a>3.2 创建文章</h5><p>在根目录执行以下命令，创建一篇文章</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs hexo">hexo new post create-blog<br></code></pre></td></tr></table></figure>
-<p>执行完成后在 source_posts 目录下生成了一个md文件(用于写文章)和一个同名的资源目录(用于存放图片)<br><img src="/./create-blog/create-blog.png" srcset="/img/loading.gif" lazyload alt="create-blog"></p>
+<p>执行完成后在 source_posts 目录下生成了一个md文件(用于写文章)和一个同名的资源目录(用于存放图片)</p>
+<!-- ![create-blog.png](create-blog.png) -->
+<img src="/2022/11/25/create-blog/create-blog.png" srcset="/img/loading.gif" lazyload class="" title="create-blog.png">
 <h5 id="3-3-本地发布"><a href="#3-3-本地发布" class="headerlink" title="3.3 本地发布"></a>3.3 本地发布</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs hexo">hexo g -d<br>hexo s<br></code></pre></td></tr></table></figure>
 <p>浏览器访问 <a href="http://localhost:4000，文章添加成功">http://localhost:4000，文章添加成功</a></p>
 <h4 id="4-发布文章"><a href="#4-发布文章" class="headerlink" title="4. 发布文章"></a>4. 发布文章</h4><p>写好的文章可以发布到 GitHub Pages，或者自己的服务器</p>
