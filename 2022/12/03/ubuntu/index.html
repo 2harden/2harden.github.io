@@ -24,7 +24,7 @@
 <meta property="og:description" content="Ubuntu系统  系统安装1. 安装过程中遇到的问题用rufuns制作U盘启动盘的时候，rufuns下载3.7的版本，高版本在制作ubuntu 16.4启动过程中会报错，rufuns 3.21用于制作ubuntu 22.4启动盘 Rufuns 3.7-&gt;ubuntu 16.4Rufuns 3.21-&gt;ubuntu 22.4 2. ubuntu20.04如何连接wifi2.1 给电脑插">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-03T02:04:48.000Z">
-<meta property="article:modified_time" content="2022-12-10T07:38:00.504Z">
+<meta property="article:modified_time" content="2022-12-11T04:57:45.680Z">
 <meta property="article:author" content="2harden">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.3k 字
+          6.4k 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          44 分钟
+          54 分钟
         
       </span>
     
@@ -361,6 +361,29 @@
 <li>硬件平台与软件不一致，例如：32位系统，下载了个64位的软件，结果就无法执行 如果使用 file 命令检查的结果是 data，而不是可执行文件，那么在这个系统平台上不能直接运行这个文件</li>
 </ul>
 <h4 id="4-ubuntu-firefox浏览器看不了视频"><a href="#4-ubuntu-firefox浏览器看不了视频" class="headerlink" title="4. ubuntu firefox浏览器看不了视频"></a>4. ubuntu firefox浏览器看不了视频</h4><p>ubuntu 20.04自带的Firefox浏览器，在默认情况下，不能播放网页的视频和音频，是因为系统此时缺少解码器，安装方法如下： sudo apt install ffmpeg 安装成功后，重新启动Firefox即可</p>
+<h4 id="5-如何在-ubuntu-20-04-上安装-Google-Chrome-网络浏览器？"><a href="#5-如何在-ubuntu-20-04-上安装-Google-Chrome-网络浏览器？" class="headerlink" title="5. 如何在 ubuntu 20.04 上安装 Google Chrome 网络浏览器？"></a>5. 如何在 ubuntu 20.04 上安装 Google Chrome 网络浏览器？</h4><h5 id="5-1-下载-Google-Chrome，使用wget来下载-Google-Chrome-deb-软件包"><a href="#5-1-下载-Google-Chrome，使用wget来下载-Google-Chrome-deb-软件包" class="headerlink" title="5.1 下载 Google Chrome，使用wget来下载 Google Chrome .deb 软件包"></a>5.1 下载 Google Chrome，使用wget来下载 Google Chrome .deb 软件包</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb<br></code></pre></td></tr></table></figure>
+<h5 id="5-2-安装-Google-Chrome"><a href="#5-2-安装-Google-Chrome" class="headerlink" title="5.2 安装 Google Chrome"></a>5.2 安装 Google Chrome</h5><p>在 Ubuntu 系统上安装软件包需要管理员权限。以 sudo 用户身份在你的系统上运行下面的命令来安装 Chrome .deb软件包:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install ./google-chrome-stable_current_amd64.deb<br></code></pre></td></tr></table></figure>
+
+<h4 id="6-Ubuntu-apt-get-install-碰到“configuring-ttf-mscorefonts-installer”解决方案"><a href="#6-Ubuntu-apt-get-install-碰到“configuring-ttf-mscorefonts-installer”解决方案" class="headerlink" title="6. Ubuntu apt-get install 碰到“configuring ttf-mscorefonts-installer”解决方案"></a>6. Ubuntu apt-get install 碰到“configuring ttf-mscorefonts-installer”解决方案</h4><p>解决方案是按Tab键盘按键进行选择，然后回车</p>
+<h4 id="7-Ubuntu-播放在线视频显示“没有找到支持的视频格式和-MIME-类型”的解决方案"><a href="#7-Ubuntu-播放在线视频显示“没有找到支持的视频格式和-MIME-类型”的解决方案" class="headerlink" title="7. Ubuntu 播放在线视频显示“没有找到支持的视频格式和 MIME 类型”的解决方案"></a>7. Ubuntu 播放在线视频显示“没有找到支持的视频格式和 MIME 类型”的解决方案</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install flashplayer-installer<br></code></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install ubuntu-restricted-extras<br></code></pre></td></tr></table></figure>
+
+<h4 id="8-列出在Ubuntu系统上以不同方式安装的软件包"><a href="#8-列出在Ubuntu系统上以不同方式安装的软件包" class="headerlink" title="8. 列出在Ubuntu系统上以不同方式安装的软件包"></a>8. 列出在Ubuntu系统上以不同方式安装的软件包</h4><h5 id="8-1-列出与apt一起安装的软件包"><a href="#8-1-列出与apt一起安装的软件包" class="headerlink" title="8.1 列出与apt一起安装的软件包"></a>8.1 列出与apt一起安装的软件包</h5><p>下面的命令将显示 全部列表 使用apt和.deb文件安装的软件包。 在这种情况下， 作为依赖安装的软件包。 因此，此命令的结果将显示我们什至不知道已安装在计算机上的已安装应用程序，库和其他软件包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt list --installed<br></code></pre></td></tr></table></figure>
+<p>如您所见，如果您使用上述命令，则已安装软件包的列表很大。 因此，最合乎逻辑的是 使用grep并过滤给定数据包的输出。 可以按照以下步骤进行操作:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt list --installed | grep nombre-programa<br></code></pre></td></tr></table></figure>
+<h5 id="8-2-列出使用dpkg安装的软件包"><a href="#8-2-列出使用dpkg安装的软件包" class="headerlink" title="8.2 列出使用dpkg安装的软件包"></a>8.2 列出使用dpkg安装的软件包</h5><p>我们将能够 使用dpkg命令列出所有已安装的软件包 在Ubuntu中。 可以在终端中使用以下命令来查询此列表（Ctrl + Alt + T）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dpkg-query -l<br></code></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dpkg -l<br></code></pre></td></tr></table></figure>
+<p>前面的两个命令可以是 用grep过滤输出，因为它完成了 合适的清单 搜索特定的程序包。 您只需要在以下每个命令后添加：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dpkg-query -l | grep nombre-programa<br></code></pre></td></tr></table></figure>
+<h5 id="8-3-列出已安装的快照程序包"><a href="#8-3-列出已安装的快照程序包" class="headerlink" title="8.3 列出已安装的快照程序包"></a>8.3 列出已安装的快照程序包</h5><p>如果我们感兴趣的是 了解已安装的Snap软件包 在系统中，在终端（Ctrl + Alt + T）中，我们将使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">snap list<br></code></pre></td></tr></table></figure>
+<h5 id="8-4-列出已安装的Flatpak软件包"><a href="#8-4-列出已安装的Flatpak软件包" class="headerlink" title="8.4 列出已安装的Flatpak软件包"></a>8.4 列出已安装的Flatpak软件包</h5><p>列出所有已安装的Flatpak软件包 在系统中，在终端（Ctrl + Alt + T）中，我们将使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">flatpak list<br></code></pre></td></tr></table></figure>
 
                 
               </div>
